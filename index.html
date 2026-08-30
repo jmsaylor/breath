@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breath Coach Business</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9fbf9;
+    }
+    h1, h2, h3 {
+        color: #2c5e3b;
+    }
+    .tabs {
+        display: flex;
+        border-bottom: 2px solid #2c5e3b;
+        margin-bottom: 20px;
+    }
+    .tab-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #555;
+        transition: 0.3s;
+    }
+    .tab-button:hover {
+        background-color: #e3ede6;
+    }
+    .tab-button.active {
+        background-color: #2c5e3b;
+        color: white;
+        border-radius: 5px 5px 0 0;
+    }
+    .tab-content {
+        display: none;
+        padding: 20px;
+        background: white;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+        display: block;
+    }
+    ul {
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Reclaim the Breath</h1>
+    
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'About')">About</button>
+        <button class="tab-button" onclick="openTab(event, 'Course')">6-Week Course</button>
+        <button class="tab-button" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="About" class="tab-content active">
+        <h2>My Journey</h2>
+        <p>For years, I reached for nicotine whenever I felt stressed, overwhelmed, or needed a quick escape[cite: 55]. I eventually found my inner child and successfully quit nicotine using breathwork[cite: 18].</p>
+        <p>Through this practice, I realized I was using the substance to suppress the very emotions asking for my attention[cite: 55]. I didn’t just quit nicotine; I learned how to self-regulate and feel safe in my own body[cite: 55]. Now, as I complete my certification with the Yoga Society of San Francisco, I am dedicated to helping others navigate this same transformation[cite: 3, 55].</p>
+    </div>
+
+    <div id="Course" class="tab-content">
+        <h2>Reclaim the Breath: Breaking the Nicotine Loop & Reconnecting Within [cite: 34]</h2>
+        <p><strong>Format:</strong> 6 weekly 60-minute live sessions (virtual or in-person), daily self-practice tracking, and direct text/voice support for acute cravings[cite: 34].</p>
+        
+        <h3>Program Outline</h3>
+        <ul>
+            <li><strong>Week 1:</strong> Pattern Mapping & Nervous System Baseline - Focus on identifying craving triggers and shallow breathing habits[cite: 35].</li>
+            <li><strong>Week 2:</strong> Intercepting the Craving Curve - Working directly with acute urges and dopamine drops[cite: 38].</li>
+            <li><strong>Week 3:</strong> Uncovering the Root (Inner Child Connection) - Exploring what the nicotine was soothing[cite: 41].</li>
+            <li><strong>Week 4:</strong> Somatic Emotional Release - Discharging stored emotional tension and physical holding patterns[cite: 44].</li>
+            <li><strong>Week 5:</strong> Re-Parenting & Self-Soothing - Building internal safety so you rely on your own nervous system rather than an external device[cite: 47].</li>
+            <li><strong>Week 6:</strong> Sustainable Autonomy & Integration - Solidifying your identity as a non-smoker/vaper and setting up long-term habits[cite: 50].</li>
+        </ul>
+    </div>
+
+    <div id="Contact" class="tab-content">
+        <h2>Let's Connect</h2>
+        <p>I am currently opening up 3 beta client spots for my 6-week personalized 1:1 journey[cite: 55].</p>
+        <p>If you are ready for a somatic, compassionate way to quit, send me a message with the word "BREATHE" to learn more[cite: 56, 60].</p>
+        <p><em>Booking is managed seamlessly via Calendly, and virtual sessions are hosted on Zoom[cite: 15].</em></p>
+        <p><strong>Email:</strong> your.email@example.com</p>
+        <p><strong>Instagram:</strong> @yourhandle</p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
