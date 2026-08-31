@@ -57,6 +57,38 @@
     li {
         margin-bottom: 10px;
     }
+    /* New Contact Layout Styles */
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #e3ede6;
+    }
+    .contact-info {
+        flex: 1;
+        min-width: 250px;
+    }
+    .qr-card {
+        background: #f9fbf9;
+        border: 2px solid #2c5e3b;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .qr-card img {
+        max-width: 150px;
+        border-radius: 4px;
+    }
+    .qr-card p {
+        margin: 10px 0 0 0;
+        font-size: 14px;
+        color: #2c5e3b;
+        font-weight: bold;
+    }
 </style>
 </head>
 <body>
@@ -92,22 +124,21 @@
 
     <div id="Contact" class="tab-content">
         <h2>Let's Connect</h2>
-        <p>I am currently opening up 3 beta client spots for my 6-week personalized 1:1 journey[cite: 55].</p>
-        <p>If you are ready for a somatic, compassionate way to quit, send me a message with the word "BREATHE" to learn more[cite: 56, 60].</p>
-        <p><em>Booking is managed seamlessly via Calendly, and virtual sessions are hosted on Zoom.</em></p>
-
-
-
-        <p><strong>Instagram:</strong> @yourhandle</p>
+        <p>I am currently opening up 3 beta client spots for my 6-week personalized 1:1 journey[cite: 1].</p>
+        <p>If you are ready for a somatic, compassionate way to quit, send me a message with the word "BREATHE" to learn more[cite: 1].</p>
         
-        <p><strong>Email:</strong> johnmsaylor@icloud.com</p>
-        
-        <div class="qr-container">
-            <p><strong>Scan to send a message on WhatsApp:</strong></p>
-            <img src="image-1.jpg" alt="WhatsApp Contact QR Code" />
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p><em>Booking is managed seamlessly via Calendly, and virtual sessions are hosted on Zoom[cite: 1].</em></p>
+                <p><strong>Email:</strong> your.email@example.com</p>
+                <p><strong>Instagram:</strong> @yourhandle</p>
+            </div>
+            
+            <div class="qr-card">
+                <img src="image-1.jpg" alt="WhatsApp Contact QR Code" />
+                <p>Scan to chat on WhatsApp</p>
+            </div>
         </div>
-
-        
     </div>
 
     <script>
